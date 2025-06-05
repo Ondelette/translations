@@ -7,7 +7,7 @@
 |Código        |~|
 |Versión       |0.5.4|
 |~VersiónNúcleo|2.10.1|
-|Comentarios   |Por favor deje sus comentarios en https://github.com/TiddlyWiki/translations/issues o https://groups.google.com/g/tiddlywikiclassic|
+|Comentarios   |Por favor deje sus comentarios, preguntas o sugerencias en https://github.com/TiddlyWiki/translations/issues (y/o en https://groups.google.com/g/tiddlywikiclassic para llamar más la atención)|
 |Licencia      |[[Creative Commons Attribution-ShareAlike 3.0 License|http://creativecommons.org/licenses/by-sa/3.0/]] |
 ***/
 //{{{
@@ -25,15 +25,15 @@ merge(config.tasks, {
 	sync: { text: "sincronizar", tooltip: "Sincronizar los cambios hechos con otros servidores y archivos de TiddlyWiki", content: '<<sync>>' },
 	importTask: { text: "importar", tooltip: "Importar tiddlers y plugins de " +
 		"otros servidores y archivos de TiddlyWiki", content: '<<importTiddlers>>' },
-	tweak: { text: "configurar", tooltip: "Cambiar la apariencia y comportamiento de TiddlyWiki", content: '<<options>>' },
-	upgrade: { text: "actualizar", tooltip: "Actualizar el núcleo de TiddlyWiki", content: '<<upgrade>>' },
-	plugins: { text: "complementos", tooltip: "Gestionar los complementos instalados", content: '<<plugins>>' }
+	tweak: { text: "ajustar", tooltip: "Ajustar la apariencia y el comportamiento del TiddlyWiki", content: '<<options>>' },
+	upgrade: { text: "actualizar", tooltip: "Actualizar el núcleo del TiddlyWiki", content: '<<upgrade>>' },
+	plugins: { text: "complementos", tooltip: "Administrar los complementos instalados en este TiddlyWiki", content: '<<plugins>>' }
 });
 
 // Options that can be set in the options panel and/or cookies
 merge(config.optionsDesc, {
 	chkAnimate: "Activar las animaciones",
-	chkAutoSave: "Guardar automáticamente los cambios",
+	chkAutoSave: "Guardar los cambios automáticamente",
 	txtBackupFolder: "Nombre del directorio en que se guardan las copias de seguridad",
 	chkCaseSensitiveSearch: "Distinguir mayúsculas y minúsculas en la búsqueda",
 	chkConfirmDelete: "Requiere confirmación antes de borrar un tiddler",
@@ -45,13 +45,13 @@ merge(config.optionsDesc, {
 	chkInsertTabs: "Usar el tabulador para crear texto en columnas en vez de servir para moverse entre campos",
 	txtMaxEditRows: "Número máximo de filas en los recuadros de edición",
 	chkOpenInNewWindow: "Abrir los enlaces externos en una ventana nueva",
-	chkPreventAsyncSaving: "No intente guardado asíncrono (puede ser necesario para complementos antiguos)",
+	chkPreventAsyncSaving: "Desactivar el guardado asíncrono (puede ser necesario para complementos antiguos)",
 	chkRegExpSearch: "Permitir expresiones regulares en la búsqueda",
 	chkRemoveExtraMarkers: "Reemplazar los marcadores de transclusión no utilizados con espacios en blanco",
-	chkSaveBackups: "Mantener la copia de seguridad cuando se guardan los cambios",
-	chkSaveEmptyTemplate: "Crear una plantilla vacía cuando se guardan los cambios",
-	chkToggleLinks: "Al pulsar sobre un enlace de un tiddler, éste se cierra",
-	txtTheme: "Nombre de tema para utilizar",
+	chkSaveBackups: "Crear una copia de seguridad cuando se guarden los cambios",
+	chkSaveEmptyTemplate: "Crear una plantilla vacía cuando se guarden los cambios",
+	chkToggleLinks: "Al hacer clic sobre un enlace de otro tiddler, el tiddler original se cierra",
+	txtTheme: "Nombre del tema para utilizar en el TiddlyWiki",
 	txtUpgradeCoreURI: "URI personalizada para descargar el núcleo de TiddlyWiki (al actualizar)",
 	txtUserName: "Nombre de usuario con el que firmará lo editado"
 });
