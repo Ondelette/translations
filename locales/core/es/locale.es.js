@@ -259,7 +259,7 @@ merge(config.macros.plugins, {
 	skippedText: "(Este complemento no ha sido ejecutado porque se cargó al inicio)",
 	noPluginText: "No hay complementos instalados",
 	confirmDeleteText: "¿Está seguro que quiere borrar estos complementos:\n\n%0?",
-	removeLabel: "quitar la etiqueta de systemConfig",
+	removeLabel: "quitar la etiqueta systemConfig",
 	removePrompt: "Quitar la etiqueta systemConfig",
 	deleteLabel: "borrar",
 	deletePrompt: "Borrar estos tiddlers para siempre",
@@ -316,7 +316,7 @@ merge(config.macros.importTiddlers, {
 	step1Html: "Indique el tipo de servidor: <select name='selTypes'><option value=''>Elija...</option></select><br>" +
 		"Escriba la URL o la ruta aquí: <input type='text' size=50 name='txtPath'><br>" +
 		"...o navegue hasta un archivo: <input type='file' size=50 name='txtBrowse'><br><hr>" +
-		"...o elija una fuente predefinida: <select name='selFeeds'><option value=''>Elige...</option></select>",
+		"...o elija una fuente predefinida: <select name='selFeeds'><option value=''>Elija...</option></select>",
 	openLabel: "abrir",
 	openPrompt: "Abrir la conexión a este archivo o servidor",
 	statusOpenHost: "Accediendo al anfitrión",
@@ -343,13 +343,13 @@ merge(config.macros.importTiddlers, {
 		" <input type='text' size=25 name='txtSaveTiddler'>",
 	importLabel: "importar",
 	importPrompt: "Importar estos tiddlers",
-	confirmOverwriteText: "¿Está seguro de que quiere sobrescribir estos tiddlers:\n\n%0?",
+	confirmOverwriteText: "¿Está seguro de que quiere sobrescribir los siguientes tiddlers:\n\n%0?",
 	step4Title: "Cuarto paso: Importar %0 tiddler(s)",
 	step4Html: "<input type='hidden' name='markReport'></input>", // DO NOT TRANSLATE
 	doneLabel: "hecho",
 	donePrompt: "Cerrar este asistente",
 	statusDoingImport: "Importando tiddlers",
-	statusDoneImport: "Todos los tiddlers se importaron",
+	statusDoneImport: "Se importaron todos los tiddlers",
 	systemServerNamePattern: "%2 en %1",
 	systemServerNamePatternNoWorkspace: "%1",
 	confirmOverwriteSaveTiddler: "El tiddler '%0' ya existe. Pulse en 'OK' " +
@@ -534,7 +534,7 @@ merge(config.shadowTiddlers, {
 	DefaultTiddlers: "[[" + gettingStartedTitle + "]]",
 	MainMenu: "[[" + gettingStartedTitle + "]]\n\n\n^^~TiddlyWiki versión <<version>>",
 	[gettingStartedTitle]: "Al comenzar, quizás quieras:\n" +
-		"* Configurar tu nombre de usuario para atribuir tus ediciones: <<option txtUserName>>\n" +
+		"* Configurar su nombre de usuario para atribuir sus ediciones: <<option txtUserName>>\n" +
 		"* Cambiar el [[título|SiteTitle]] de la página (ahora \"<<tiddler SiteTitle>>\") y " +
 			"el [[subtítulo|SiteSubtitle]] (ahora \"<<tiddler SiteSubtitle>>\"); " +
 			"también configuran el título de la pestaña del navegador\n" +
@@ -543,9 +543,9 @@ merge(config.shadowTiddlers, {
 			"sigue el enlace, edítalo y haz clic en \"hecho\"\n" + // config.commands.saveTiddler.text
 		"** Se mostrará en la pestaña Historial (normalmente a la derecha), " + // from config.shadowTiddlers.SideBarTabs
 			"pero tal vez quieras enlazarlo en el MainMenu (normalmente a la izquierda)\n" + // translate MainMenu?
-		"** y/o hacer que se abra cuando ~TiddlyWiki se abra editando la lista de " +
+		"** y/o hacer que se abra cuando el ~TiddlyWiki se abra editando la lista de " +
 			"[[DefaultTiddlers]] (separando los enlaces con espacios o saltos de línea)\n" +
-		"* Guardar tu ~TiddlyWiki\n" +
+		"* Guardar su ~TiddlyWiki\n" +
 		"** Aunque \"guardar como descarga\" funciona en cualquier navegador, no es tan conveniente, " +
 			"por lo que probablemente quieras usar [[un guardador dedicado|https://classic.tiddlywiki.com/#%5B%5BSetting up saving%5D%5D]]",
 	SiteTitle: "Mi TiddlyWiki",
@@ -566,15 +566,15 @@ merge(config.annotations, {
 	AdvancedOptions: "Este tiddler oculto permite controlar bastantes opciones avanzadas",
 	ColorPalette: "Los valores en este tiddler oculto configuran el esquema de colores de la interfaz de ~TiddlyWiki",
 	DefaultTiddlers: "Los tiddlers listados en este tiddler oculto son que se mostrarán por defecto cuando se abre ~TiddlyWiki",
-	EditTemplate: "La plantilla HTML en este tiddler oculto indica cómo se muestran los tiddlers mientras se editan",
+	EditTemplate: "La plantilla HTML en este tiddler oculto indica cómo se verán los tiddlers mientras se editan",
 	[gettingStartedTitle]: "Este tiddler oculto contiene las instrucciones básicas de utilización",
 	ImportTiddlers: "Este tiddler oculto permite acceder a los tiddlers que se están importando",
-	MainMenu: "Este tiddler oculto contiene los apartados que se muestran en el menú principal de la columna de la izquierda de la pantalla",
+	MainMenu: "Este tiddler oculto contiene el menú principal a la izquierda de la pantalla",
 	MarkupPreHead: "Este tiddler se inserta al principio de la sección <head> del archivo HTML de TiddlyWiki",
 	MarkupPostHead: "Este tiddler se inserta al final de la sección  <head> del archivo HTML de TiddlyWiki",
 	MarkupPreBody: "Este tiddler se inserta al principio de la sección <body> del archivo HTML de TiddlyWiki",
 	MarkupPostBody: "Este tiddler se inserta al final de la sección <body> del archivo HTML de TiddlyWiki, justo antes del bloque de script",
-	OptionsPanel: "Este tiddler oculto contiene los apartados de la opción desplegable Opciones, de la barra de la derecha",
+	OptionsPanel: "Este tiddler oculto contiene el menú del panel de opciones desplegable, de la barra de la derecha",
 	PageTemplate: "La plantilla HTML en este tiddler oculto determina la estructura general de ~TiddlyWiki",
 	PluginManager: "Este tiddler oculto permite acceder al Gestor de Complementos",
 	SideBarOptions: "Este tiddler oculto contiene lo que hay en el apartado de opciones de la barra de la derecha",
